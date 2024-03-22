@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<!-- Main document. -->
+<html lang="en" data-bs-theme="dark">
+
+    <!-- Header information. -->
+    <head>
+
+        <!-- HTML5 meta tags. -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Document information. -->
+        <title>Fullscreens: Notepad</title>
+
+        <!-- CDN stylesheets. -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" integrity="sha256-9kPW/n5nn53j4WMRYAxe9c1rCY96Oogo/MKSVdKzPmI=" crossorigin="anonymous">
+
+    </head>
+
+    <!-- Page contents. -->
+    <body>
+
+        <!-- Fixed controls. -->
+        <div class="fixed-top m-3">
+
+            <!-- Left side. -->
+            <div class="float-start">
+
+                <!-- Home button. -->
+                <a href="../index.html" class="btn btn-secondary shadow-sm px-2 py-1" type="button">
+                    <i class="bi bi-house"></i>
+                </a>
+
+            </div>
+
+            <!-- Right side. -->
+            <div class="float-end">
+
+                <!-- Clear button. -->
+                <button id="editor-nuke" class="btn btn-danger shadow-sm px-2 py-1" type="button">
+                    <i class="bi bi-radioactive"></i>
+                </button>
+
+                <!-- Theme toggle. -->
+                <button id="theme-button" class="btn btn-secondary shadow-sm px-2 py-1" type="button">
+                    <i id="theme-icon" class="bi bi-moon"></i>
+                </button>
+                
+            </div>
+
+        </div>
+
+        <!-- Editor. -->
+        <div class="d-flex flex-column min-vh-100 min-vw-100 px-3 pb-3 pt-5">
+            <textarea id="editor-text" class="mt-3 mb-1 d-flex flex-grow-1 bg-secondary-subtle rounded font-monospace"></textarea>
+        </div>
+
+        <!-- Fixed information. -->
+        <div class="fixed-bottom m-4">
+
+            <!-- Right side: Copyright. -->
+            <div class="float-end small fw-light text-body-secondary">
+                &copy;2024 - <a class="link-body-emphasis text-body-secondary link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://github.com/sykeben" target="_blank">github.com/sykeben</a>
+            </div>
+
+        </div>
+
+        <!-- CDN scripts. -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <!-- Custom scripts. -->
+        <script src="../theme.js"></script>
+        <script src="editor.js"></script>
+        
+    </body>
+
+</html>

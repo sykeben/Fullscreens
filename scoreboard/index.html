@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<!-- Main document. -->
+<html lang="en" data-bs-theme="dark">
+
+    <!-- Header information. -->
+    <head>
+
+        <!-- HTML5 meta tags. -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Document information. -->
+        <title>Fullscreens: Scoreboard</title>
+
+        <!-- CDN stylesheets. -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" integrity="sha256-9kPW/n5nn53j4WMRYAxe9c1rCY96Oogo/MKSVdKzPmI=" crossorigin="anonymous">
+
+    </head>
+
+    <!-- Page contents. -->
+    <body>
+
+        <!-- Fixed controls. -->
+        <div class="fixed-top m-3">
+
+            <!-- Left side. -->
+            <div class="float-start">
+
+                <!-- Home button. -->
+                <a href="../index.html" class="btn btn-secondary shadow-sm px-2 py-1" type="button">
+                    <i class="bi bi-house"></i>
+                </a>
+
+                <!-- Team A clear. -->
+                <button id="score-a-nuke" class="btn btn-danger shadow-sm px-2 py-1" type="button">
+                    <i class="bi bi-radioactive"></i>
+                </button>
+
+                <!-- Team A down/up. -->
+                <div class="btn-group shadow-sm">
+                    <button id="score-a-down" class="btn btn-primary px-2 py-1" type="button">
+                        <i class="bi bi-arrow-down"></i>
+                    </button>
+                    <button id="score-a-up" class="btn btn-primary px-2 py-1" type="button">
+                        <i class="bi bi-arrow-up"></i>
+                    </button>
+                </div>
+
+                <!-- Team A ID. -->
+                <div class="d-inline-block font-monospace px-2 py-0">[A]</div>
+
+            </div>
+
+            <!-- Right side. -->
+            <div class="float-end">
+
+                <!-- Team B ID. -->
+                <div class="d-inline-block font-monospace px-2 py-0">[B]</div>
+
+                <!-- Team B down/up. -->
+                <div class="btn-group shadow-sm">
+                    <button id="score-b-down" class="btn btn-primary px-2 py-1" type="button">
+                        <i class="bi bi-arrow-down"></i>
+                    </button>
+                    <button id="score-b-up" class="btn btn-primary px-2 py-1" type="button">
+                        <i class="bi bi-arrow-up"></i>
+                    </button>
+                </div>
+
+                <!-- Team B clear. -->
+                <button id="score-b-nuke" class="btn btn-danger shadow-sm px-2 py-1" type="button">
+                    <i class="bi bi-radioactive"></i>
+                </button>
+
+                <!-- Theme toggle. -->
+                <button id="theme-button" class="btn btn-secondary shadow-sm px-2 py-1" type="button">
+                    <i id="theme-icon" class="bi bi-moon"></i>
+                </button>
+                
+            </div>
+
+        </div>
+
+        <!-- Score display. -->
+        <div class="d-flex flex-column min-vh-100 min-vw-100">
+            <div class="d-flex flex-grow-1 justify-content-center align-items-center">
+                <div class="container-fluid font-monospace text-center">
+                    <div class="row">
+
+                        <!-- Team A. -->
+                        <div class="col">
+                            <p class="lead">[A]</p>
+                            <h1 class="display-1" id="score-a-number">0</h1>
+                        </div>
+
+                        <!-- Team B. -->
+                        <div class="col">
+                            <p class="lead">[B]</p>
+                            <h1 class="display-1" id="score-b-number">0</h1>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fixed information. -->
+        <div class="fixed-bottom m-3">
+
+            <!-- Right side: Copyright. -->
+            <div class="float-end small fw-light text-body-secondary">
+                &copy;2024 - <a class="link-body-emphasis text-body-secondary link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://github.com/sykeben" target="_blank">github.com/sykeben</a>
+            </div>
+
+        </div>
+
+        <!-- CDN scripts. -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <!-- Custom scripts. -->
+        <script src="../theme.js"></script>
+        <script src="scores.js"></script>
+        
+    </body>
+
+</html>
